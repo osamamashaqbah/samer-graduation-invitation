@@ -88,7 +88,7 @@ function playMusic(){
   if(!audio)return;
   const startPlayback=()=>{
     if(audio.currentTime<.05||audio.ended)audio.currentTime=start;
-    audio.volume=.10;
+    audio.volume=.07;
     audio.loop=true;
     audio.play().then(()=>{document.body.classList.add('music-on');if(label)label.textContent='الموسيقى تعمل'}).catch(()=>{if(label)label.textContent='اضغطوا زر الموسيقى'});
   };
